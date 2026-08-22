@@ -1,2 +1,2 @@
-# Mingluli.cn
+# Mingluli.com
 My personal website
