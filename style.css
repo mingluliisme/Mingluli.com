@@ -1,0 +1,539 @@
+/* =========================
+   Base
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  background: #ffffff;
+  color: #1c1c1c;
+
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+
+/* =========================
+   Layout
+========================= */
+
+.container {
+  width: min(1100px, 88%);
+  margin: 0 auto;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #eeeeee;
+}
+
+.nav-container {
+  min-height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.site-name {
+  font-size: 20px;
+  font-weight: 700;
+
+  color: #111111;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.nav a {
+  color: #555555;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav a:hover {
+  color: #000000;
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+  padding: 130px 0 120px;
+}
+
+.eyebrow {
+  margin-bottom: 16px;
+
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+
+  color: #777777;
+}
+
+.hero h1 {
+  font-size: clamp(54px, 9vw, 100px);
+  line-height: 1;
+
+  letter-spacing: -0.05em;
+
+  margin-bottom: 24px;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  color: #555555;
+
+  margin-bottom: 30px;
+}
+
+.hero-text {
+  max-width: 680px;
+
+  font-size: 19px;
+  color: #555555;
+
+  margin-bottom: 38px;
+}
+
+.hero-links {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+.button {
+  display: inline-block;
+
+  padding: 12px 20px;
+
+  border-radius: 999px;
+
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.button.primary {
+  background: #111111;
+  color: #ffffff;
+}
+
+.button.secondary {
+  border: 1px solid #cccccc;
+  color: #222222;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+
+/* =========================
+   Sections
+========================= */
+
+.section {
+  padding: 100px 0;
+}
+
+.alt-section {
+  background: #f7f7f5;
+}
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+
+  margin-bottom: 40px;
+}
+
+.section-number {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+
+  color: #999999;
+}
+
+.section h2 {
+  font-size: 40px;
+  letter-spacing: -0.03em;
+}
+
+.section-intro {
+  max-width: 650px;
+
+  margin-bottom: 45px;
+
+  color: #666666;
+  font-size: 18px;
+}
+
+
+/* =========================
+   About
+========================= */
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+
+  gap: 80px;
+}
+
+.content-grid p {
+  margin-bottom: 22px;
+}
+
+.info-list {
+  border-top: 1px solid #dddddd;
+}
+
+.info-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+
+  gap: 20px;
+
+  padding: 17px 0;
+
+  border-bottom: 1px solid #dddddd;
+}
+
+.info-label {
+  color: #888888;
+  font-size: 14px;
+}
+
+.info-value {
+  color: #333333;
+}
+
+
+/* =========================
+   Research cards
+========================= */
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+.card {
+  background: #ffffff;
+
+  border: 1px solid #e4e4e4;
+
+  border-radius: 14px;
+
+  padding: 28px;
+}
+
+.card-meta {
+  margin-bottom: 14px;
+
+  font-size: 13px;
+  color: #888888;
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.card h3 {
+  font-size: 22px;
+
+  margin-bottom: 14px;
+
+  line-height: 1.35;
+}
+
+.card p {
+  color: #666666;
+
+  margin-bottom: 22px;
+}
+
+.card a {
+  color: #111111;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   Writing
+========================= */
+
+.post-list {
+  border-top: 1px solid #dddddd;
+}
+
+.post-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+
+  padding: 30px 0;
+
+  border-bottom: 1px solid #dddddd;
+}
+
+.post-date {
+  font-size: 14px;
+  color: #888888;
+
+  margin-bottom: 7px;
+}
+
+.post-item h3 {
+  margin-bottom: 8px;
+
+  font-size: 23px;
+}
+
+.post-item p {
+  color: #666666;
+}
+
+.post-item a {
+  white-space: nowrap;
+
+  color: #111111;
+  text-decoration: none;
+}
+
+
+/* =========================
+   Notes
+========================= */
+
+.notes-list {
+  max-width: 760px;
+}
+
+.note {
+  padding: 26px 0;
+
+  border-bottom: 1px solid #dddddd;
+}
+
+.note:first-child {
+  border-top: 1px solid #dddddd;
+}
+
+.note-date {
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  color: #888888;
+}
+
+
+/* =========================
+   Life
+========================= */
+
+.life-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.life-card {
+  min-height: 180px;
+
+  padding: 28px;
+
+  border: 1px solid #dddddd;
+  border-radius: 14px;
+}
+
+.life-card h3 {
+  font-size: 22px;
+
+  margin-bottom: 12px;
+}
+
+.life-card p {
+  color: #666666;
+}
+
+
+/* =========================
+   Contact
+========================= */
+
+.contact-section {
+  border-top: 1px solid #eeeeee;
+}
+
+.contact-text {
+  max-width: 600px;
+
+  margin-bottom: 30px;
+
+  font-size: 18px;
+  color: #666666;
+}
+
+.contact-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  color: #111111;
+  text-decoration: none;
+
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.contact-links a:hover {
+  border-bottom-color: #111111;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+.footer {
+  border-top: 1px solid #eeeeee;
+
+  padding: 35px 0;
+
+  color: #888888;
+  font-size: 14px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 850px) {
+
+  .nav-container {
+    align-items: flex-start;
+    flex-direction: column;
+
+    padding: 18px 0;
+  }
+
+  .nav {
+    gap: 14px;
+  }
+
+  .hero {
+    padding: 90px 0 80px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .card-list {
+    grid-template-columns: 1fr;
+  }
+
+  .life-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .post-item {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+}
+
+
+@media (max-width: 520px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 54px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .section {
+    padding: 75px 0;
+  }
+
+  .section h2 {
+    font-size: 34px;
+  }
+
+  .info-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+  }
+
+}
