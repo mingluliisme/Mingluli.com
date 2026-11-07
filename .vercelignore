@@ -1,4 +1,4 @@
 content/
-build.py
-build.bat
+*.py
+*.bat
 *.md
