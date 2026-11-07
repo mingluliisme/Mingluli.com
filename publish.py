@@ -79,7 +79,8 @@ def main():
     if not msg:
         msg = '更新内容'
 
-    git('add', 'content', 'index.html', 'build.py', 'build.bat',
+    git('add', 'content', 'index.html', 'style.css', 'favicon.svg',
+        'build.py', 'build.bat',
         'publish.py', 'publish.bat', '.vercelignore')
     code, out = git('commit', '-m', msg)
     print(out)
